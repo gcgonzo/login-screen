@@ -4,9 +4,13 @@
 @import url("global.css");
 @import url("components.css");
 
+/* === cardLogin === */
+
 .cardLogin {
   width: 22rem;
   height: 18rem;
+  padding: 2rem;
+  flex-direction: column;
   border-radius: 1rem;
   background: var(--bg-card);
 
@@ -41,4 +45,48 @@
 }
 .cardLogin .fa-user:hover {
   transform: rotateX(360deg);
+}
+/* === Message Error === */
+.msgError {
+  text-align: center;
+  margin-top: 3rem;
+  color: coral;
+}
+
+/* === form-group === */
+
+.form-group {
+  position: relative;
+}
+.form-group label {
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  color: var(--blue-200);
+}
+.form-group input {
+  width: 100%;
+  min-width: 18rem;
+  margin: 1rem 0;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: var(--beige-color);
+
+  font-size: 16px;
+  color: var(--blue-200);
+}
+
+.cardLogin p {
+  color: var(--blue-200);
+  font-size: 14px;
+  text-align: center;
+}
+.cardLogin button {
+  border: none;
+  background: transparent;
+  color: var(--beige-color);
+  cursor: pointer;
+  font-size: 14px;
 }

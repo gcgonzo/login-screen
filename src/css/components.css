@@ -5,6 +5,7 @@
   padding: 0.6rem 6rem;
   border-radius: 0.8rem;
   border: 3px solid transparent;
+  cursor: pointer;
   color: var(--beige-color);
   background: var(--blue-300);
 
