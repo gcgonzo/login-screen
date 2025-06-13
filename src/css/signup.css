@@ -1,0 +1,57 @@
+.signup .container {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cardSignup {
+  width: 25rem;
+  height: 26rem;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+  background: var(--beige-color);
+}
+.signup .btn button {
+  padding: 0.6rem 8rem;
+}
+.header-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--blue-200);
+  color: var(--blue-200);
+}
+.header-card span {
+  width: 20px;
+  height: 22px;
+  border: 1px solid var(--blue-200);
+  cursor: pointer;
+}
+.header-card span:hover {
+  background: var(--blue-200);
+  color: var(--beige-color);
+}
+.cardSignup #msgError,
+#msgSuccess {
+  display: none;
+  text-align: center;
+  color: var(--blue-200);
+}
+.cardSignup .form-group {
+  margin: 0 1rem;
+}
+.cardSignup .form-group input {
+  background: var(--blue-200);
+}
+.cardSignup .form-group label {
+  color: var(--beige-color);
+}
+.cardSignup .form-group .fa-eye {
+  color: var(--beige-color);
+}
+.cardSignup .form-group .fa-eye:hover {
+  color: var(--blue-400);
+}
