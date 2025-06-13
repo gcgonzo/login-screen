@@ -1,8 +1,12 @@
+.signup {
+  display: none;
+}
 .signup .container {
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1000 !important;
   background: rgba(0, 0, 0, 0.5);
 }
 .cardSignup {
@@ -42,16 +46,45 @@
 }
 .cardSignup .form-group {
   margin: 0 1rem;
+  position: relative;
 }
 .cardSignup .form-group input {
+  display: inline-block;
+  outline: none;
   background: var(--blue-200);
+  color: var(--beige-color);
 }
 .cardSignup .form-group label {
-  color: var(--beige-color);
+  position: absolute;
+  top: 1.5rem;
+  left: 0.5rem;
+  pointer-events: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .cardSignup .form-group .fa-eye {
   color: var(--beige-color);
 }
 .cardSignup .form-group .fa-eye:hover {
   color: var(--blue-400);
+}
+.cardSignup label.active {
+  top: -0.3rem;
+  color: var(--blue-200);
+}
+/* #msgError {
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+} */
+#msgSuccess {
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
 }

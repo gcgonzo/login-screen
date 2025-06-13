@@ -47,10 +47,15 @@
   transform: rotateX(360deg);
 }
 /* === Message Error === */
-.msgError {
-  text-align: center;
+#msgError {
   margin-top: 3rem;
-  color: coral;
+  margin-bottom: 0.5rem;
+  padding: 8px;
+  border-radius: 4px;
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  opacity: 0;
 }
 
 /* === form-group === */
@@ -77,6 +82,8 @@
 
   font-size: 16px;
   color: var(--blue-200);
+  transition: all 0.3s ease-out;
+  border: 2px solid transparent;
 }
 
 .cardLogin p {

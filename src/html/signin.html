@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/global.css" />
     <!-- Javascript -->
     <script src="../js/signin.js" defer></script>
+    <script src="../js/signup.js" defer></script>
     <!-- Icons -->
     <link
       rel="stylesheet"
@@ -17,9 +18,9 @@
   <body>
     <section class="login">
       <div class="container center">
-        <div class="cardLogin">
+        <div class="cardLogin center">
           <i class="fa-regular fa-user"></i>
-          <div class="msgError">msg</div>
+          <div id="msgError">msg</div>
           <div class="form-group">
             <label for="formLabel" id="userLabel">Usuário</label>
             <input type="text" id="usuario" />
@@ -31,10 +32,10 @@
           </div>
           <p>
             Não tem uma conta?
-            <button>Cadastre-se</button>
+            <button onclick="abrirModal()">Cadastre-se</button>
           </p>
         </div>
-        <div class="btn"><button>Entrar</button></div>
+        <div class="btn"><button onclick="entrar()">Entrar</button></div>
       </div>
     </section>
     <section class="signup">
@@ -46,23 +47,23 @@
           </div>
           <div id="msgError">Error</div>
           <div id="msgSuccess">Success</div>
-          <div class="form-group card1">
-            <label for="formLabel" id="nomeLabel">Nome</label>
+          <div class="form-group">
+            <label id="nomeLabel">Nome</label>
             <input type="text" id="nome" />
           </div>
           <div class="form-group">
-            <label for="formLabel" id="LabelUser">Usuário</label>
+            <label id="labelUser">Usuário</label>
             <input type="text" id="user" />
           </div>
           <div class="form-group">
-            <label for="formLabel" id="senhaLabel">Senha</label>
-            <input type="password" id="senha" />
-            <i class="fa fa-eye" aria-hidden="true"></i>
+            <label id="pinLabel">Senha</label>
+            <input type="password" id="pin" />
+            <i class="fa fa-eye signupPin" aria-hidden="true"></i>
           </div>
           <div class="form-group">
-            <label for="formLabel" id="ConfSenhaLabel">Confirma Senha</label>
-            <input type="password" id="ConfSenha" />
-            <i class="fa fa-eye" aria-hidden="true"></i>
+            <label id="confSenhaLabel">Confirma Senha</label>
+            <input type="password" id="confSenha" />
+            <i class="fa fa-eye sigConfPin" aria-hidden="true"></i>
           </div>
         </div>
         <div class="btn"><button>Cadastrar</button></div>
